@@ -153,7 +153,7 @@ body {
 
 .left-side {
   background: url("./images/image-product-desktop.jpg") no-repeat center center;
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 50%;
   border-radius: 10px 0 0 10px;
 }
@@ -180,6 +180,7 @@ body {
   font-family: "Fraunces", serif;
   font-size: 2.2rem;
   color: var(--very-dark-blue);
+  font-weight: 700;
 }
 
 .desc {
@@ -205,4 +206,55 @@ body {
   text-decoration: line-through;
   color: var(--dark-grayish-blue);
   margin-bottom: 50px;
+}
+
+.main-btn {
+  border: none;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.main-btn:hover {
+  background-color: hsl(158, 36%, 26%);
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+  .main-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container {
+    width: 90%;
+    height: 800px;
+    flex-direction: column;
+  }
+
+  .left-side {
+    background: url("./images/image-product-mobile.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    min-height: 300px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .right-side {
+    width: 90%;
+    margin: auto;
+  }
 }
