@@ -159,7 +159,11 @@ body {
 }
 
 .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
+  height: 100%;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -176,4 +180,29 @@ body {
   font-family: "Fraunces", serif;
   font-size: 2.2rem;
   color: var(--very-dark-blue);
+}
+
+.desc {
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.price {
+  display: flex;
+  gap: 20px;
+  font-family: "Fraunces", serif;
+}
+
+.sale-price {
+  font-size: 1.5rem;
+  color: var(--dark-cyan);
+}
+
+.normal-price {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 50px;
 }
